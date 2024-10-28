@@ -1,37 +1,88 @@
-🎯 𝐎𝐛𝐣𝐞𝐜𝐭𝐢𝐯𝐞: -
-AtliQ is a company that sells hardware like PCs, Mouse, Printers, etc. to different customers. They have 2 types of customers one is Physical stores that are known as Brick & Mortar like Croma and Best Buy and the second is E-commerce like Amazon and Flipkart. The AtliQ Business users have been given files to build reports the data contains more than 1.5 million records, and have to build sales and financial reports of the company.
+# 🛠️ AtliQ Sales and Financial Report Analysis
 
-📈 𝐓𝐡𝐞 𝐑𝐞𝐩𝐨𝐫𝐭 𝐜𝐨𝐧𝐬𝐢𝐬𝐭𝐬 𝐨𝐟: -
-Sales Report
-Customer Performance Report
-Market Performance Report
-Top 10 Products
-Division Level
-Top & Bottom 5 Products
-New Product - 2021
-Top 5 countries
-Finance Report
-P&L yearly
-P&L Monthly
-P&L Market
-GM% Quartely
-➡️ 𝐒𝐭𝐞𝐩𝐬 𝐢𝐧𝐯𝐨𝐥𝐯𝐞𝐝 𝐢𝐧 𝐦𝐚𝐤𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐑𝐞𝐩𝐨𝐫𝐭: -
-𝐄𝐓𝐋 (𝐄𝐱𝐭𝐫𝐚𝐜𝐭 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦 𝐚𝐧𝐝 𝐋𝐨𝐚𝐝) Load all the CSV files that were provided, to Power Query. Ensured there were no missing values, all dimension tables contained a unique column, removed duplicate values, corrected the spelling errors, and in the end loaded the files in the Power Pivot.
+🎯 **Objective:**  
+AtliQ is a hardware company that sells products like PCs, mice, printers, and more. Their customers fall into two categories:  
+1. **Brick & Mortar stores** - e.g., Croma, Best Buy  
+2. **E-commerce platforms** - e.g., Amazon, Flipkart  
 
-𝐃𝐚𝐭𝐚 𝐌𝐨𝐝𝐞𝐥𝐢𝐧𝐠 Connect all the tables using star schema. Create a new table dim_date using Power Query that includes the date, month, and year in a separate column. Add a new column for adding AtiliQ Hardware Fiscal year that runs from September to August and then connect the table with others.
+The company provided data with over 1.5 million records to generate comprehensive sales and financial reports.
 
-𝗣𝗶𝘃𝗼𝘁 𝗧𝗮𝗯𝗹𝗲 𝗮𝗻𝗱 𝗣𝗼𝘄𝗲𝗿 𝗣𝗶𝘃𝗼𝘁 Integrate the data model with a Pivot Table for quick data analysis. Utilize Power Pivot to create new measures and columns. Employ Power Query for seamless data transformation and connectivity, streamlining the entire process of preparing and analysing data efficiently.
+---
 
-𝐃𝐀𝐗 (𝐃𝐚𝐭𝐚 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 𝐄𝐱𝐩𝐫𝐞𝐬𝐬𝐢𝐨𝐧) Create 10 + new Measures such as Net sales for each year, Gross Margin, GM %, and COGS using Formulas like Calculate, Sum, Divide, etc. Create new Columns using Functions like Related, Calculate, Format and extract quarterly months by adding 4 months to the calendar year for a fiscal year perspective.
+## 📊 **Reports Included:**
+- **Sales Report**  
+- **Customer Performance Report**  
+- **Market Performance Report**  
+- **Top 10 Products**  
+- **Division Level Analysis**  
+- **Top & Bottom 5 Products**  
+- **New Product Launch - 2021**  
+- **Top 5 Countries by Sales**  
+- **Finance Report**  
+  - P&L Yearly  
+  - P&L Monthly  
+  - P&L Market View  
+  - GM% Quarterly  
 
-𝐂𝐨𝐧𝐝𝐢𝐭𝐢𝐨𝐧𝐚𝐥 𝐅𝐨𝐫𝐦𝐚𝐭𝐭𝐢𝐧𝐠 Applied Conditional Formatting to enhance data presentation by applying rules, and formatting numbers and text. This approach highlights important data, identifies trends, and improves overall data readability for more effective analysis.
+---
 
-💡 𝐈𝐧𝐬𝐢𝐠𝐡𝐭𝐬:-
-In 2021, India emerged as the top-performing market with the highest net sales of $161.3 million, while Sweden recorded the lowest sales at $1.8 million.
-The AQ Master Wired X1 MS proved to be the best-selling product, moving 4.2 million units, whereas the AQ Home Allin1 Gen2 had the lowest sales, with only 8.8 thousand units sold.
-During the festive months of October to December, a notable surge in sales and profits was observed in India.
-The top 3 customers contributing to the highest net sales were Amazon, AtliQ Exclusive, and AtliQ e-store.
-The introduction of 16 new products in 2021 showcased AQ's innovation, with the AQ Qwerty leading sales at 22 million units.
-Finance Knowledge
-A Profit and Loss (P&L) statement is a financial report that provides an overview of a company’s financial performance over a period of time, typically a month, quarter, or year.
-The Profit and loss (P&L) statement includes several metrics such as Net sales, cost of goods sold (COGS), Gross Margin and GM % etc, these metrics evaluate a company’s financial performance, profitability, and pricing tactics.
+## 🔄 **Steps Involved in Report Creation:**
+
+### 1️⃣ **ETL (Extract, Transform, Load):**
+- Loaded CSV files into **Power Query**.  
+- Ensured data integrity:
+  - Checked for missing values.
+  - Ensured unique keys in dimension tables.  
+  - Removed duplicates and fixed spelling errors.  
+- Loaded the cleaned data into **Power Pivot** for further processing.
+
+### 2️⃣ **Data Modeling:**
+- Created a **star schema** by connecting all tables.  
+- Generated a `dim_date` table with date, month, and year columns.  
+- Added a **fiscal year column** (September to August) for AtliQ Hardware and linked it with other tables.
+
+### 3️⃣ **Pivot Table & Power Pivot:**
+- Built a **Pivot Table** for quick insights and used **Power Pivot** to create measures.  
+- Utilized **Power Query** for smooth data transformation and seamless integration.
+
+### 4️⃣ **DAX (Data Analysis Expressions):**
+- Created **10+ measures** like:
+  - Net Sales  
+  - Gross Margin (GM)  
+  - GM %  
+  - COGS (Cost of Goods Sold)  
+- Added new columns using functions like `RELATED()`, `CALCULATE()`, and `FORMAT()`.  
+- Extracted **fiscal year quarters** by adjusting months.
+
+### 5️⃣ **Conditional Formatting:**
+- Applied **conditional formatting** to:
+  - Highlight trends.
+  - Format numbers and text.
+  - Improve data readability for actionable insights.
+
+---
+
+## 💡 **Key Insights:**
+- **Top Market:** India achieved the highest net sales in 2021 at **$161.3M**, while Sweden had the lowest at **$1.8M**.  
+- **Top Product:** The **AQ Master Wired X1 MS** sold **4.2M units**, while the **AQ Home All-in-1 Gen2** only sold **8.8K units**.  
+- **Seasonal Surge:** Sales and profits peaked during the festive months (October-December) in India.  
+- **Top Customers:** The top contributors to net sales were **Amazon**, **AtliQ Exclusive**, and **AtliQ e-store**.  
+- **New Product Launch:** 2021 saw the release of **16 new products**, with **AQ Qwerty** leading sales at **22M units**.
+
+---
+
+## 📑 **Finance Knowledge:**
+- **Profit & Loss (P&L) Statement:**  
+  A financial report summarizing the company’s performance over a month, quarter, or year.  
+  - Metrics included:
+    - **Net Sales**  
+    - **COGS (Cost of Goods Sold)**  
+    - **Gross Margin**  
+    - **GM%**  
+
+These metrics offer insights into profitability, pricing strategies, and financial health.
+
+---
+
+Feel free to explore the full project! 🚀  
+![image](https://github.com/user-attachments/assets/ffff3e58-cc4e-46fe-8b33-41668c7b52b6)
